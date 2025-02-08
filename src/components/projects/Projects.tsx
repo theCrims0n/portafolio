@@ -46,7 +46,7 @@ export const Projects = () => {
                                 <p color="black" className="font-bold  text-[16px]">
                                     Proyecto basado en gestion de productos, rol de usuarios y checkout de compras.
                                 </p>
-                                <Link href={`https://crimson-01b3.onrender.com/`} target="_blank" className="hover:text-blue-500 animation duration-300 ease-in-out">Link del proyecto</Link>
+                                <Link href={`https://grey-ball.vercel.app/`} target="_blank" className="hover:text-blue-500 animation duration-300 ease-in-out">Link del proyecto</Link>
 
                             </div>
                             <div className="ease-in-out animation duration-300  w-full">
