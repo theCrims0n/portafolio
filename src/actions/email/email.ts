@@ -13,7 +13,7 @@ export const SendEmail = async ({ email, message, subject }: Props) => {
         user: 'n2107676@gmail.com',
         password: 'zeig rfox debb bsvj',
         host: 'smtp.gmail.com',
-        ssl: true,
+        ssl: false,
     });
 
     const mailOptions = {
