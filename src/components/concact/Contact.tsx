@@ -11,8 +11,6 @@ export const Contact = () => {
 
     const { register, handleSubmit, formState: { errors, isSubmitting, isLoading }, resetField, setError } = useForm()
 
-
-
     const onSend = (data: any) => {
 
         const { email, message, subject } = data

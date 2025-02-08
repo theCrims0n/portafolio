@@ -11,14 +11,14 @@ export const SendEmail = async ({ email, message, subject }: Props) => {
 
     const client = new SMTPClient({
         user: 'n2107676@gmail.com',
-        password: 'zeig rfox debb bsvj',
+        password: process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID,
         host: 'smtp.gmail.com',
-        ssl: false,
+        ssl: true,
     });
 
     const mailOptions = {
         from: `<${email}>`,
-        cc : `<${email}>`,
+        cc: `<${email}>`,
         to: 'mi.salomon89@gmail.com',
         subject: subject,
         text: message
