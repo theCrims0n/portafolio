@@ -22,11 +22,13 @@ export const Contact = () => {
             setError('email', { type: 'pattern', message: 'Formato de correo invalido.' })
             return
         }
-        SendEmail({ email, message, subject })
-        resetField('email')
-        resetField('message')
-        resetField('subject')
-        redirect('#presentation');
+        SendEmail({ email, message, subject }).then(() => {
+            resetField('email')
+            resetField('message')
+            resetField('subject')
+            redirect('#presentation');
+        })
+
     }
 
     return (
