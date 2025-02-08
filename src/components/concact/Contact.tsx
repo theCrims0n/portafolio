@@ -6,13 +6,16 @@ import { useForm } from 'react-hook-form'
 import { Spinner } from "../spinner/Spinner"
 import { redirect } from 'next/navigation';
 import validateEmail from "@/helper/validator"
+import { useState } from "react"
 
 export const Contact = () => {
 
-    const { register, handleSubmit, formState: { errors, isSubmitting, isLoading }, resetField, setError } = useForm()
+    const [isLoading, setIsLoading] = useState(false)
+
+    const { register, handleSubmit, formState: { errors, isSubmitting, }, resetField, setError } = useForm()
 
     const onSend = async (data: any) => {
-
+        setIsLoading(true)
         const { email, message, subject } = data
 
         const isValidEmail = validateEmail(email)
@@ -24,9 +27,9 @@ export const Contact = () => {
             resetField('email')
             resetField('message')
             resetField('subject')
+            setIsLoading(false)
             redirect('#presentation');
         })
-
     }
 
     return (
@@ -39,6 +42,7 @@ export const Contact = () => {
                     <div className="flex flex-col justify-center items-start space-y-2">
                         <label className='text-sm' htmlFor="email">Email</label>
                         <Input
+                            disabled={isLoading}
                             className={errors.email ? "border-red-500" : ''}
                             {...register('email', { required: 'Correo requerido' })}
                         />
@@ -47,6 +51,7 @@ export const Contact = () => {
                     <div className="flex flex-col justify-center items-start space-y-2">
                         <label className='text-sm' htmlFor="subject">Asunto</label>
                         <Input
+                            disabled={isLoading}
                             placeholder="Asunto..."
                             {...register('subject')}
                         />
@@ -54,6 +59,7 @@ export const Contact = () => {
                     <div className="flex flex-col justify-center items-start space-y-2 h-full">
                         <label className='text-sm' htmlFor="message">Mensaje</label>
                         <InputArea
+                            disabled={isLoading}
                             className={errors.message ? "border-red-500" : ''}
                             maxLength={500}
                             {...register('message', { required: 'Mensaje requerido' })}
@@ -61,7 +67,7 @@ export const Contact = () => {
                         {errors.message && <span className="text-xs mt-2 text-orange-600 w-full">Mensaje requerido</span>}
                     </div>
                     {errors.smtp && <span className="text-xs mt-2 text-orange-600 w-full">Error con SMTP</span>}
-                    <button disabled={isSubmitting} className="btn-primary">{isSubmitting ? <Spinner size={20} /> : 'Enviar'}</button>
+                    <button disabled={isLoading} className="btn-primary">{isLoading ? <Spinner size={20} /> : 'Enviar'}</button>
                 </form>
             </div>
         </div>
