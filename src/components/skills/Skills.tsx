@@ -2,13 +2,13 @@ import { AcademicCapIcon, BookOpenIcon, ClockIcon, FaceSmileIcon, MagnifyingGlas
 
 export const Skills = () => {
     return (
-        <div className="flex flex-col space-y-2 md:min-h-[110svh] fadeInUp" id="skills">
+        <div className="flex flex-col space-y-2 md:min-h-[80svh] fadeInUp" id="skills">
             <div className="flex justify-center items-center mb-4">
                 <h1 className="m-2 font-bold md:text-[50px] text-sm ">Habilidades blandas</h1>
             </div>
             <div className="flex flex-col justify-center items-start border border-zinc-800 ">
                 <div className="w-96 flex-col w-full flex md:justify-center justify-start items-center md:items-start">
-                    <nav className="flex w-full justify-center items-center min-w-[240px] flex-col gap-1 p-1.5">
+                    <nav className="flex w-full justify-center items-center min-w-[240px] flex-col p-6 grid grid-cols-1 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 gap-6">
                         <div
                             role="button"
                             className="flex w-full hover:pl-4  items-center rounded-md p-3 transition-all hover:bg-slate-900 focus:bg-slate-900 active:bg-slate-900"
