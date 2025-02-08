@@ -1,5 +1,6 @@
 'use server'
-import { SMTPClient } from 'emailjs';
+
+import nodemailer from 'nodemailer'
 
 interface Props {
     email: string;
@@ -9,33 +10,37 @@ interface Props {
 
 export const SendEmail = async ({ email, message, subject }: Props) => {
 
-    const client = new SMTPClient({
-        user: 'n2107676@gmail.com',
-        password: process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID,
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        port: 456,
         host: 'smtp.gmail.com',
-        ssl: true,
+        auth: {
+            user: 'n2107676@gmail.com',
+            pass: 'zeig rfox debb bsvj'
+        }
     });
 
-    const mailOptions = {
-        from: `<${email}>`,
-        cc: `<${email}>`,
-        to: 'mi.salomon89@gmail.com',
+    var mailOptions = {
+        from: email,
+        to: email,
+        cc: email,
         subject: subject,
-        text: message
+        html: `<h1>Hola</h1><h2>T${message}</h2>`
     };
-
     try {
-        client.send(
-            mailOptions,
-            (err, message) => {
-                console.log(err || message);
+
+        transporter.sendMail(mailOptions, function (error, info) {
+            if (error) {
+                console.log(error);
+            } else {
+                console.log('Email sent: ' + info.response);
             }
-        );
+        });
+
+        return true
 
     } catch (error) {
+        return false
     }
-
-
-
 }
 

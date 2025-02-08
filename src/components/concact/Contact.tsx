@@ -11,7 +11,7 @@ export const Contact = () => {
 
     const { register, handleSubmit, formState: { errors, isSubmitting, isLoading }, resetField, setError } = useForm()
 
-    const onSend = (data: any) => {
+    const onSend = async (data: any) => {
 
         const { email, message, subject } = data
 
@@ -60,6 +60,7 @@ export const Contact = () => {
                         />
                         {errors.message && <span className="text-xs mt-2 text-orange-600 w-full">Mensaje requerido</span>}
                     </div>
+                    {errors.smtp && <span className="text-xs mt-2 text-orange-600 w-full">Error con SMTP</span>}
                     <button disabled={isSubmitting} className="btn-primary">{isSubmitting ? <Spinner size={20} /> : 'Enviar'}</button>
                 </form>
             </div>
