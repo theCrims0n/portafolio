@@ -21,21 +21,42 @@ export const SendEmail = async ({ email, message, subject }: Props) => {
         }
     });
 
-    var mailOptions = {
-        from: email,
-        to: email,
-        cc: email,
-        subject: subject,
-        html: `<h1>Hola</h1><h2>T${message}</h2>`
-    };
+
     try {
 
-        transporter.sendMail(mailOptions, function (error, info) {
-            if (error) {
-                console.log(error);
-            } else {
-                console.log('Email sent: ' + info.response);
-            }
+        await new Promise((resolve, reject) => {
+            // verify connection configuration
+            transporter.verify(function (error, success) {
+                if (error) {
+                    console.log(error);
+                    reject(error);
+                } else {
+                    console.log("Server is ready to take our messages");
+                    resolve(success);
+                }
+            });
+        });
+
+        const mailData = {
+            from: email,
+            replyTo: email,
+            to: "mi.salomon89@gmail.com",
+            subject: subject,
+            text: message,
+            html: `${message}`,
+        };
+
+        await new Promise((resolve, reject) => {
+            // send mail
+            transporter.sendMail(mailData, (err, info) => {
+                if (err) {
+                    console.error(err);
+                    reject(err);
+                } else {
+                    console.log(info);
+                    resolve(info);
+                }
+            });
         });
 
         return true
