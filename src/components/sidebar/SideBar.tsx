@@ -37,37 +37,37 @@ export const SideBar = () => {
                     />
                     <div className="w-full h-px bg-gray-200 my-10" />
                     <div className="flex flex-col">
-                        <Link href="#presentation" className="flex items-center mt-5 p-2 hover:ml-2 hover:bg-purple-900 rounded transition-all">
+                        <Link onClick={() => closeSideMenu()} href="#presentation" className="flex items-center mt-5 p-2 hover:ml-2 hover:bg-purple-900 rounded transition-all">
                             <span className={`${titleFont.className} antialiased font-bold text-sm`}>
                                 Home
                             </span>
                         </Link>
-                        <Link href="#about" className="flex items-center mt-5 p-2 hover:ml-2 hover:bg-purple-900 rounded transition-all">
+                        <Link onClick={() => closeSideMenu()} href="#about" className="flex items-center mt-5 p-2 hover:ml-2 hover:bg-purple-900 rounded transition-all">
                             <span className={`${titleFont.className} antialiased font-bold text-sm`}>
                                 Acerca de mi
                             </span>
                         </Link>
-                        <Link href="#technologies" className="flex items-center mt-5 p-2 hover:ml-2 hover:bg-purple-900 rounded transition-all">
+                        <Link onClick={() => closeSideMenu()} href="#technologies" className="flex items-center mt-5 p-2 hover:ml-2 hover:bg-purple-900 rounded transition-all">
                             <span className={`${titleFont.className} antialiased font-bold text-sm`}>
                                 Tecnologias
                             </span>
                         </Link>
-                        <Link href="#experience" className="flex items-center mt-5 p-2 hover:ml-2 hover:bg-purple-900 rounded transition-all">
+                        <Link onClick={() => closeSideMenu()} href="#experience" className="flex items-center mt-5 p-2 hover:ml-2 hover:bg-purple-900 rounded transition-all">
                             <span className={`${titleFont.className} antialiased font-bold text-sm`}>
                                 Experiencia laboral
                             </span>
                         </Link>
-                        <Link href="#skills" className="flex items-center mt-5 p-2 hover:ml-2 hover:bg-purple-900 rounded transition-all">
+                        <Link onClick={() => closeSideMenu()} href="#skills" className="flex items-center mt-5 p-2 hover:ml-2 hover:bg-purple-900 rounded transition-all">
                             <span className={`${titleFont.className} antialiased font-bold text-sm`}>
                                 Habilidades
                             </span>
                         </Link>
-                        <Link href="#projects" className="flex items-center mt-5 p-2 hover:ml-2 hover:bg-purple-900 rounded transition-all">
+                        <Link onClick={() => closeSideMenu()} href="#projects" className="flex items-center mt-5 p-2 hover:ml-2 hover:bg-purple-900 rounded transition-all">
                             <span className={`${titleFont.className} antialiased font-bold text-sm`}>
                                 Proyectos
                             </span>
                         </Link>
-                        <Link href="#contact" className="flex items-center mt-5 p-2 hover:ml-2 hover:bg-purple-900 rounded transition-all">
+                        <Link onClick={() => closeSideMenu()} href="#contact" className="flex items-center mt-5 p-2 hover:ml-2 hover:bg-purple-900 rounded transition-all">
                             <span className={`${titleFont.className} antialiased font-bold text-sm`}>
                                 Contactame
                             </span>
