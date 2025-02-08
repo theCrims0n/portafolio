@@ -14,6 +14,7 @@ export const SendEmail = async ({ email, message, subject }: Props) => {
         service: 'gmail',
         port: 456,
         host: 'smtp.gmail.com',
+        secure: true,
         auth: {
             user: 'n2107676@gmail.com',
             pass: 'zeig rfox debb bsvj'
