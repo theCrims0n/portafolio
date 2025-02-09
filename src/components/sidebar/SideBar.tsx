@@ -35,39 +35,38 @@ export const SideBar = () => {
                         className="absolute top-5 right-5 cursor-pointer size-10 text-sm text-zinc-300"
                         onClick={() => closeSideMenu()}
                     />
-                    <div className="w-full h-px bg-zinc-600 my-10" />
-                    <div className="flex flex-col gap-2">
-                        <Link onClick={() => closeSideMenu()} href="#presentation" className="flex items-center pl-2 pl-2 h-12 hover:ml-2 bg-zinc-900 hover:bg-purple-900 rounded transition-all">
+                    <div className="flex flex-col gap-2 my-14">
+                        <Link onClick={() => closeSideMenu()} href="#presentation" className="flex items-center pl-2 pl-2 h-14 hover:ml-2 bg-zinc-900 hover:bg-purple-900 rounded transition-all">
                             <span className={`${titleFont.className} antialiased font-normal text-sm`}>
                                 Home
                             </span>
                         </Link>
-                        <Link onClick={() => closeSideMenu()} href="#about" className="flex items-center  pl-2 h-12  hover:ml-2 bg-zinc-900 hover:bg-purple-900 rounded transition-all">
+                        <Link onClick={() => closeSideMenu()} href="#about" className="flex items-center  pl-2 h-14  hover:ml-2 bg-zinc-900 hover:bg-purple-900 rounded transition-all">
                             <span className={`${titleFont.className} antialiased font-normal text-sm`}>
                                 {t('navbar.about')}
                             </span>
                         </Link>
-                        <Link onClick={() => closeSideMenu()} href="#technologies" className="flex items-center  pl-2 h-12  hover:ml-2 bg-zinc-900 hover:bg-purple-900 rounded transition-all">
+                        <Link onClick={() => closeSideMenu()} href="#technologies" className="flex items-center  pl-2 h-14  hover:ml-2 bg-zinc-900 hover:bg-purple-900 rounded transition-all">
                             <span className={`${titleFont.className} antialiased font-normal text-sm`}>
                                 {t('navbar.technologies')}
                             </span>
                         </Link>
-                        <Link onClick={() => closeSideMenu()} href="#experience" className="flex items-center  pl-2 h-12  hover:ml-2 bg-zinc-900 hover:bg-purple-900 rounded transition-all">
+                        <Link onClick={() => closeSideMenu()} href="#experience" className="flex items-center  pl-2 h-14  hover:ml-2 bg-zinc-900 hover:bg-purple-900 rounded transition-all">
                             <span className={`${titleFont.className} antialiased font-normal text-sm`}>
                                 {t('navbar.experience')}
                             </span>
                         </Link>
-                        <Link onClick={() => closeSideMenu()} href="#skills" className="flex items-center  pl-2 h-12  hover:ml-2 bg-zinc-900 hover:bg-purple-900 rounded transition-all">
+                        <Link onClick={() => closeSideMenu()} href="#skills" className="flex items-center  pl-2 h-14  hover:ml-2 bg-zinc-900 hover:bg-purple-900 rounded transition-all">
                             <span className={`${titleFont.className} antialiased font-normal text-sm`}>
                                 {t('navbar.skills')}
                             </span>
                         </Link>
-                        <Link onClick={() => closeSideMenu()} href="#projects" className="flex items-center  pl-2 h-12  hover:ml-2 bg-zinc-900 hover:bg-purple-900 rounded transition-all">
+                        <Link onClick={() => closeSideMenu()} href="#projects" className="flex items-center  pl-2 h-14  hover:ml-2 bg-zinc-900 hover:bg-purple-900 rounded transition-all">
                             <span className={`${titleFont.className} antialiased font-normal text-sm`}>
                                 {t('navbar.projects')}
                             </span>
                         </Link>
-                        <Link onClick={() => closeSideMenu()} href="#contact" className="flex items-center  pl-2 h-12  hover:ml-2 bg-zinc-900 hover:bg-purple-900 rounded transition-all">
+                        <Link onClick={() => closeSideMenu()} href="#contact" className="flex items-center  pl-2 h-14  hover:ml-2 bg-zinc-900 hover:bg-purple-900 rounded transition-all">
                             <span className={`${titleFont.className} antialiased font-normal text-sm`}>
                                 {t('navbar.contactme')}
                             </span>
