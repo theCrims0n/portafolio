@@ -1,3 +1,4 @@
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/16/solid"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -46,11 +47,12 @@ export const Projects = () => {
                                 <p color="black" className="font-bold  text-[16px]">
                                     Proyecto basado en gestion de productos, rol de usuarios y checkout de compras.
                                 </p>
-                                <Link href={`https://grey-ball.vercel.app/`} target="_blank" className="hover:text-blue-500 animation duration-300 ease-in-out">Link del proyecto</Link>
-
+                                <Link href={`https://grey-ball.vercel.app/`} target="_blank" className="flex flex-row hover:text-blue-500 animation duration-300 ease-in-out">Link del proyecto
+                                    <ArrowTopRightOnSquareIcon className="size-4 ml-1" />
+                                </Link>
                             </div>
                             <div className="ease-in-out animation duration-300  w-full">
-                                <h1 color="black" className="font-bold text-[16px] pt-6">
+                                <h1 color="black" className="font-bold text-[16px] pt-4">
                                     Herramientas utilizadas
                                 </h1>
                                 <ul className="text-[14px] pt-2">
@@ -116,10 +118,12 @@ export const Projects = () => {
                                 <p color="black" className="font-bold text-[16px]">
                                     Aplicación de servicio de mensajeria instantanea o para resumir... una sala de chat ideal para los amigos.
                                 </p>
-                                <Link href={`https://crimson-01b3.onrender.com/`} target="_blank" className="hover:text-blue-500 animation duration-300 ease-in-out">Link del proyecto</Link>
+                                <Link href={`https://crimson-01b3.onrender.com/`} target="_blank" className="flex flex-row hover:text-blue-500 animation duration-300 ease-in-out">Link del proyecto
+                                    <ArrowTopRightOnSquareIcon className="size-4 ml-1" />
+                                </Link>
                             </div>
                             <div className="ease-in-out animation duration-300  w-full">
-                                <h1 color="black" className="font-bold text-[16px] pt-6">
+                                <h1 color="black" className="font-bold text-[16px] pt-4">
                                     Herramientas utilizadas
                                 </h1>
                                 <ul className="text-[14px] pt-2">
@@ -191,10 +195,12 @@ export const Projects = () => {
                                 <p color="black" className="font-bold text-[16px]">
                                     Aplicación desarrollada para la gestion de empleados basados en una empresa con roles de usuario.
                                 </p>
-                                <Link href={`https://react-node-project-1-my5f.onrender.com/auth/login`} target="_blank" className="hover:text-blue-500 animation duration-300 ease-in-out">Link del proyecto</Link>
+                                <Link href={`https://react-node-project-1-my5f.onrender.com/auth/login`} target="_blank" className="flex flex-row hover:text-blue-500 animation duration-300 ease-in-out">Link del proyecto
+                                    <ArrowTopRightOnSquareIcon className="size-4 ml-1" />
+                                </Link>
                             </div>
                             <div className="ease-in-out animation duration-300  w-full">
-                                <h1 color="black" className="font-bold text-[16px] pt-6">
+                                <h1 color="black" className="font-bold text-[16px] pt-4">
                                     Herramientas utilizadas
                                 </h1>
                                 <ul className="text-[14px] pt-2">
