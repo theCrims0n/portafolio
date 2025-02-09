@@ -17,7 +17,7 @@ export const GridWelcome = () => {
             <div className="flex justify-center items-center mb-4">
                 <h1 className="font-bold md:text-[50px] text-sm fade-in pl-4 ">{timeline ? t('experience.timeline') : t('experience.experience')}</h1>
             </div>
-            <div className={clsx("flex border border-zinc-800 justify-center items-center animation duration-500 ease-in-out", !timeline && 'grid grid-cols-1 2xl:grid-cols-5 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 gap-10 p-6 ')}>
+            <div className={clsx("flex border box-shadow-card justify-center items-center animation duration-500 ease-in-out", !timeline && 'grid grid-cols-1 2xl:grid-cols-5 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 gap-10 p-6 ')}>
                 {
                     !experience
                         ?

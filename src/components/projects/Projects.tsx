@@ -12,8 +12,8 @@ export const Projects = () => {
             <div className="flex justify-center items-center mb-6">
                 <h1 className="font-bold md:text-[50px] text-[16px]fade-in pl-4 ">{t('projects.projects')}</h1>
             </div>
-            <div className="flex border border-zinc-800 justify-center items-center animation duration-500 ease-in-out grid grid-cols-1 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-1 md:grid-cols-1 gap-10 p-6">
-                <div className="flex flex-col h-full w-full md:min-w-[260px] box-shadow-card p-4 space-y-4">
+            <div className="flex border box-shadow-card justify-center items-center animation duration-500 ease-in-out grid grid-cols-1 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-1 md:grid-cols-1 gap-10 p-6">
+                <div className="flex flex-col h-full w-full md:min-w-[260px] p-4 space-y-4">
                     <div className='flex flex-col h-full justify-start items-center'>
                         <header className=" flex justify-center items-start bg-transparent line-clamp break-words font-bold text-[16px]h-10">
                             Ecommerce (Shop Store)

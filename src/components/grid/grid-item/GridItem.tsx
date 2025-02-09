@@ -26,7 +26,7 @@ export const GridItem = ({ experience }: Props) => {
     }, [experience.image])
 
     return (
-        <div className="flex flex-col h-full w-full md:min-w-[260px] box-shadow-card p-4 space-y-4">
+        <div className="flex flex-col h-full w-full md:min-w-[260px] p-4 space-y-4">
             <div className='flex flex-col h-full justify-start items-center'>
                 <header className=" flex justify-center items-start bg-transparent line-clamp break-words font-bold text-sm h-10">
                     {experience.job}

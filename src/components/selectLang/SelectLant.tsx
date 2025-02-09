@@ -6,7 +6,7 @@ import usa from '../../../public/img/USA.svg'
 import Image from "next/image"
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/16/solid"
 import useTranslation from "@/hooks/use-translation"
-import { usePathname, useRouter } from "next/navigation"
+import { usePathname, redirect  } from "next/navigation"
 import i18nConfig from "../../../i18nConfig"
 import { useUIStore } from "@/store/sidebar"
 
@@ -18,10 +18,8 @@ export const SelectLang = () => {
     const [lang, setLang] = useState('es')
     const languages: any[] = [{ flag: mex, value: 'es' }, { flag: usa, value: 'en' }]
     const { i18n } = useTranslation()
-    const router = useRouter()
     const pathname = usePathname()
     const { closeSideMenu } = useUIStore()
-
     const currentLaguage = i18n.language
 
     const handleOpen = () => {
@@ -51,7 +49,6 @@ export const SelectLang = () => {
         } else {
             setLang('es')
         }
-
     }, [])
 
     const handleSelect = (e: string) => {
@@ -59,15 +56,12 @@ export const SelectLang = () => {
         handleOpen()
         closeSideMenu()
         if (currentLaguage === i18nConfig.defaultLocale) {
-            router.push(`${e}${pathname}`)
+            redirect(`${e}${pathname}`)
         }
         else {
-            router.push(pathname.replace(`/${currentLaguage}`, `${e}`))
+            redirect(pathname.replace(`/${currentLaguage}`, `${e}`))
         }
-
-        router.refresh()
     }
-
 
     return (
         <div ref={ref} className="relative lg:w-40 w-full">

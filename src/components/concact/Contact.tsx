@@ -39,7 +39,7 @@ export const Contact = () => {
                 <h1 className="font-bold md:text-[50px] text-sm fade-in pl-4 ">{t('contact.contact')}</h1>
             </div>
             <div className="flex justify-center items-center">
-                <form onSubmit={handleSubmit(onSend)} className="flex flex-col p-8 w-full h-full md:w-[800px] box-shadow-card gap-6">
+                <form onSubmit={handleSubmit(onSend)} className="flex flex-col p-8 w-full h-full md:w-[800px] border box-shadow-card gap-6">
                     <div className="flex flex-col justify-center items-start space-y-2">
                         <label className='text-sm' htmlFor="email">Email</label>
                         <Input

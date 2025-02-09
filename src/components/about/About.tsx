@@ -13,7 +13,7 @@ export const About = () => {
                 <h1 className="m-2 font-bold md:text-[50px] text-sm fade-in">{t('about.aboutme')}</h1>
             </div>
 
-            <div className=" flex flex-col h-full w-full md:justify-end  justify-center items-center box-shadow-card space-x-6 p-4">
+            <div className=" flex flex-col h-full w-full md:justify-end  justify-center items-center border box-shadow-card space-x-6 p-4">
                 <h1 className="xl:text-[100px] md:text-[70px] xs:text-[20px] font-bold">{t('about.hello')}</h1>
 
                 <motion.div className=" flex xl:flex-row flex-col justify-start items-center xl:space-x-12 space-y-4" initial={{ opacity: 0 }} animate={{

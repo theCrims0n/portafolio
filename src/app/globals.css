@@ -81,8 +81,13 @@ body {
 
 .box-shadow-card{ 
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  border-color: rgb(11, 11, 11);
+  border-color: rgb(56, 0, 79);
   background-color : rgb(9, 9, 9);
+  transition-duration: .5s;
+}
+
+.box-shadow-card:hover{ 
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .slider {

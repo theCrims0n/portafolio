@@ -14,8 +14,8 @@ export const Presentation = () => {
 
     return (
         <>
-            <div className=" bg-gradient-to-r from-blue-800 via-red-600 to-cyan-600 inline-block text-transparent bg-clip-text fade-in fadeInUp">
-                <h1 className="xl:text-[12svh] md:text-[10svh] text-[6svh] font-bold">{t('presentation.software')}</h1>
+            <div className="bg-gradient-to-r from-blue-800 via-red-600 to-cyan-600 inline-block text-transparent bg-clip-text fade-in fadeInUp">
+                <h1 className="break-words xl:text-[12svh] md:text-[10svh] text-[6svh] font-bold">{t('presentation.software')}</h1>
             </div>
             <div className="h-10">
                 {set && <div className="fade-in fadeInUp ">
