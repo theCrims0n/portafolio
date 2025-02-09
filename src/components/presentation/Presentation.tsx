@@ -15,11 +15,11 @@ export const Presentation = () => {
     return (
         <>
             <div className=" bg-gradient-to-r from-blue-800 via-red-600 to-cyan-600 inline-block text-transparent bg-clip-text fade-in fadeInUp">
-                <h1 className="xl:text-[200px] lg:text-[100px] text-[60px] font-bold">{t('presentation.software')}</h1>
+                <h1 className="xl:text-[12svh] md:text-[10svh] text-[6svh] font-bold">{t('presentation.software')}</h1>
             </div>
             <div className="h-10">
                 {set && <div className="fade-in fadeInUp ">
-                    <h1 className="xl:text-[40px] lg:text-[30px] text-[16px] font-bold">{t('presentation.subtitle')}</h1>
+                    <h1 className="xl:text-[4svh] md:text-[3svh] text-[2svh] text-[16px] font-bold">{t('presentation.subtitle')}</h1>
                 </div>}
             </div>
         </>
