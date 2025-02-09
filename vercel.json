@@ -1,8 +1,12 @@
 {
     "rewrites": [
         {
-            "source": "/(.*)",
-            "destination": "/[locale]"
+            "source": "/en",
+            "destination": "https://portafolio-pi-livid.vercel.app/en"
+        },
+        {
+            "source": "/es",
+            "destination": "https://portafolio-pi-livid.vercel.app/es"
         }
     ]
 }
