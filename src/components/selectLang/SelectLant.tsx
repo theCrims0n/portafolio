@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import mex from '../../../public/img/MEX.svg'
 import usa from '../../../public/img/USA.svg'
 import Image from "next/image"
-import { ChevronDownIcon } from "@heroicons/react/16/solid"
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/16/solid"
 import useTranslation from "@/hooks/use-translation"
 import { usePathname, useRouter } from "next/navigation"
 import i18nConfig from "../../../i18nConfig"
@@ -14,6 +14,7 @@ export const SelectLang = () => {
 
     const ref: any = useRef(null)
     const [open, setOpen] = useState(true)
+    const [openSelect, setOpenSelect] = useState(false)
     const [lang, setLang] = useState('es')
     const languages: any[] = [{ flag: mex, value: 'es' }, { flag: usa, value: 'en' }]
     const { i18n } = useTranslation()
@@ -25,6 +26,7 @@ export const SelectLang = () => {
 
     const handleOpen = () => {
         setOpen(!open)
+        setOpenSelect(!openSelect)
     }
 
     useEffect(() => {
@@ -81,8 +83,8 @@ export const SelectLang = () => {
                             alt={lang}
                             className="size-8"
                         />
-                        <ChevronDownIcon className="size-6" />
                     </div>
+                    {openSelect ? <ChevronUpIcon className="size-6 "/> : <ChevronDownIcon className="size-6 " />}
                 </button>
             </div>
             <div >
@@ -90,12 +92,12 @@ export const SelectLang = () => {
                     hidden={open}
                     data-popover="profile-menu"
                     data-popover-placement="bottom"
-                    className="absolute w-full mt-1 z-10 overflow-auto bg-zinc-950 p-2 shadow-lg shadow-sm focus:outline-none">
+                    className="absolute w-full border border-purple-900 mt-1 z-10 overflow-auto bg-zinc-50/10 p-2 shadow-lg shadow-sm focus:outline-none">
                     <ul className="flex flex-col justify-center items-center space-y-2 ">
                         {
                             languages?.map((lang, index) => {
                                 return (
-                                    <li key={index} className="w-full h-10 flex justify-center items-center rounded-md hover:bg-zinc-900" onClick={() => handleSelect(lang.value)}>
+                                    <li key={index} className="w-full h-10 flex justify-center items-center rounded-md hover:bg-zinc-50/20" onClick={() => handleSelect(lang.value)}>
                                         <Image
                                             width={200}
                                             height={200}

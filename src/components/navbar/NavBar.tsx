@@ -31,37 +31,37 @@ export const NavBar = () => {
                     <div className=' flex justify-center items-center space-x-12'>
                         <div className="flex flex-row justify-center items-center gap-14 md:w-[1200px] w-full">
                             <Link href="#presentation">
-                                <span className={`${titleFont.className} antialiased font-bold lg:text-sm text-xs`}>
+                                <span className={`${titleFont.className} antialiased font-bold xl:text-sm text-[11px]`}>
                                     Home
                                 </span>
                             </Link>
                             <Link href="#about">
-                                <span className={`${titleFont.className} antialiased font-bold lg:text-sm text-xs`}>
+                                <span className={`${titleFont.className} antialiased font-bold xl:text-sm text-[11px]`}>
                                     {t('navbar.about')}
                                 </span>
                             </Link>
                             <Link href="#technologies">
-                                <span className={`${titleFont.className} antialiased font-bold lg:text-sm text-xs`}>
+                                <span className={`${titleFont.className} antialiased font-bold xl:text-sm text-[11px]`}>
                                     {t('navbar.technologies')}
                                 </span>
                             </Link>
                             <Link href="#experience">
-                                <span className={`${titleFont.className} antialiased font-bold lg:text-sm text-xs`}>
+                                <span className={`${titleFont.className} antialiased font-bold xl:text-sm text-[11px]`}>
                                     {t('navbar.experience')}
                                 </span>
                             </Link>
                             <Link href="#skills">
-                                <span className={`${titleFont.className} antialiased font-bold lg:text-sm text-xs`}>
+                                <span className={`${titleFont.className} antialiased font-bold xl:text-sm text-[11px]`}>
                                     {t('navbar.skills')}
                                 </span>
                             </Link>
                             <Link href="#projects">
-                                <span className={`${titleFont.className} antialiased font-bold lg:text-sm text-xs`}>
+                                <span className={`${titleFont.className} antialiased font-bold xl:text-sm text-[11px]`}>
                                     {t('navbar.projects')}
                                 </span>
                             </Link>
                             <Link href="#contact">
-                                <span className={`${titleFont.className} antialiased font-bold lg:text-sm text-xs`}>
+                                <span className={`${titleFont.className} antialiased font-bold xl:text-sm text-[11px]`}>
                                     {t('navbar.contactme')}
                                 </span>
                             </Link>
