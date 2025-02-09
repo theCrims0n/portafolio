@@ -43,7 +43,7 @@ export const SendEmail = async ({ email, message, subject }: Props) => {
             to: "mi.salomon89@gmail.com",
             subject: subject,
             text: message,
-            html: `<h2>${message}<h2>`,
+            html: `<p>${message}<p>`,
         };
 
         await new Promise((resolve, reject) => {

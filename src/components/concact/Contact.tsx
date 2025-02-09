@@ -6,30 +6,29 @@ import { useForm } from 'react-hook-form'
 import { Spinner } from "../spinner/Spinner"
 import { redirect } from 'next/navigation';
 import validateEmail from "@/helper/validator"
-import { useState } from "react"
 import useTranslation from "@/hooks/use-translation"
+import { useTransition } from "react"
 
 export const Contact = () => {
 
     const { t } = useTranslation()
-    const [isLoading, setIsLoading] = useState(false)
+    const [isLoading, setIsLoading] = useTransition()
     const { register, handleSubmit, formState: { errors, isSubmitting, }, resetField, setError } = useForm()
 
     const onSend = async (data: any) => {
-        setIsLoading(true)
-        const { email, message, subject } = data
-
-        const isValidEmail = validateEmail(email)
-        if (!isValidEmail) {
-            setError('email', { type: 'pattern', message: 'Formato de correo invalido.' })
-            return
-        }
-        SendEmail({ email, message, subject }).then(() => {
-            resetField('email')
-            resetField('message')
-            resetField('subject')
-            setIsLoading(false)
-            redirect('#presentation');
+        setIsLoading(() => {
+            const { email, message, subject } = data
+            const isValidEmail = validateEmail(email)
+            if (!isValidEmail) {
+                setError('email', { type: 'pattern', message: 'Formato de correo invalido.' })
+                return
+            }
+            SendEmail({ email, message, subject }).then(() => {
+                resetField('email')
+                resetField('message')
+                resetField('subject')
+                redirect('#presentation');
+            })
         })
     }
 
