@@ -2,11 +2,11 @@
     "rewrites": [
         {
             "source": "/en",
-            "destination": "https://portafolio-pi-livid.vercel.app/en"
+            "destination": "/en"
         },
         {
             "source": "/es",
-            "destination": "https://portafolio-pi-livid.vercel.app/es"
+            "destination": "/es"
         }
     ]
 }
