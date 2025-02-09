@@ -1,15 +1,18 @@
+'use client'
 import Image from "next/image"
-
 import * as images from '../../../public/svg/index'
+import useTranslation from "@/hooks/use-translation"
 
 export const Caroulsel = () => {
 
     const svgs = Object.entries(images)
 
+    const {t} = useTranslation()
+
     return (
         <div className="flex flex-col space-y-2 md:min-h-[40svh] fade-in fadeInUp" id='technologies'>
             <div className="flex justify-center items-center  fade-in">
-                <h1 className="m-2 font-bold md:text-[50px] text-sm ">Tecnologias</h1>
+                <h1 className="m-2 font-bold md:text-[50px] text-sm ">{t('technologies.technologies')}</h1>
             </div>
             <div className="slider bg-slate-950">
                 <div className=" slide-track">

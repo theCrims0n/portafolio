@@ -1,4 +1,5 @@
 'use client'
+import useTranslation from "@/hooks/use-translation";
 import { Experience } from "@/interface/experience";
 import clsx from "clsx";
 import Image from "next/image";
@@ -13,6 +14,11 @@ export const GridItem = ({ experience }: Props) => {
 
     const [isLoading, setIsLoading] = useState(true)
     const [job, setJob] = useState('')
+    const { t } = useTranslation()
+
+    const jobs = [{ job: 'devise', description: t('experience.devise'), rol : t('experience.softwaredev') }, { job: 'euysa', description: t('experience.euysa'), rol : t('experience.systemanalist') },
+    { job: 'equipesca', description: t('experience.equipesca'), rol : t('experience.systemanalist') }, { job: 'emcor', description: t('experience.emcor'), rol : t('experience.softenginerinter') },
+    { job: 'repobox', description: t('experience.repobox'), rol : t('experience.softenginerinter') }]
 
     useEffect(() => {
         setIsLoading(false)
@@ -50,12 +56,12 @@ export const GridItem = ({ experience }: Props) => {
                     </div>
                     <div className="h-10 flex justify-center items-end">
                         <p color="black" className="font-bold  ">
-                            {experience.title}
+                        {jobs.filter(f => f.job === experience.id.toLocaleLowerCase()).map(f => f.rol)}
                         </p>
                     </div>
                     <div className={clsx("absolute top-0 left-0 ease-in-out animation duration-300 -translate-x-full w-full", job === experience.job && 'translate-x-0')}>
                         <p color="black" className="font-normal text-xs pt-6">
-                            {experience.description}
+                            {jobs.filter(f => f.job === experience.id.toLocaleLowerCase()).map(f => f.description)}
                         </p>
                     </div>
                 </div>

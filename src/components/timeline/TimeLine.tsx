@@ -1,3 +1,5 @@
+'use client'
+import useTranslation from "@/hooks/use-translation";
 import { Experience } from "@/interface/experience";
 
 type Props = {
@@ -5,6 +7,12 @@ type Props = {
 };
 
 export const TimeLine = ({ experience }: Props) => {
+    const { t } = useTranslation()
+
+    const jobs = [{ job: 'devise', description: t('experience.devise') }, { job: 'euysa', description: t('experience.euysa') },
+    { job: 'equipesca', description: t('experience.equipesca') }, { job: 'emcor', description: t('experience.emcor') },
+    { job: 'repobox', description: t('experience.repobox') }]
+
     return (
         <div className="flex justify-center items-center xl:h-[700px] h-full w-full p-4 space-y-4 fade-in ">
             <ol className="xl:flex xl:justify-center xl:items-center border-l border-purple-800 dark:border-purple-800 lg:flex lg:justify-center lg:gap-6 lg:border-l-0 lg:border-t">
@@ -23,7 +31,7 @@ export const TimeLine = ({ experience }: Props) => {
                                         {experience.job}
                                     </h4>
                                     <p className="mb-3 md:text-sm text-xs">
-                                        {experience.description}
+                                        {jobs.filter(f => f.job === experience.id.toLocaleLowerCase()).map(f => f.description)}
                                     </p>
                                 </div>
                             </li>

@@ -1,10 +1,13 @@
+'use client'
+import useTranslation from "@/hooks/use-translation"
 import { AcademicCapIcon, BookOpenIcon, ClockIcon, FaceSmileIcon, MagnifyingGlassCircleIcon, MicrophoneIcon, RectangleGroupIcon, ScaleIcon, SquaresPlusIcon, StarIcon, TrophyIcon, UserGroupIcon } from "@heroicons/react/16/solid"
 
 export const Skills = () => {
+    const { t } = useTranslation()
     return (
         <div className="flex flex-col space-y-2 md:min-h-[80svh] fadeInUp" id="skills">
             <div className="flex justify-center items-center mb-4">
-                <h1 className="m-2 font-bold md:text-[50px] text-sm ">Habilidades blandas</h1>
+                <h1 className="m-2 font-bold md:text-[50px] text-sm ">{t('skills.skills')}</h1>
             </div>
             <div className="flex flex-col justify-center items-start border border-zinc-800 ">
                 <div className="w-96 flex-col w-full flex md:justify-center justify-start items-center md:items-start">
@@ -18,10 +21,10 @@ export const Skills = () => {
                             </div>
                             <div>
                                 <h6 className="lg:text-lg text-sm font-bold">
-                                    Trabajo en equipo
+                                    {t('skills.teamwork')}
                                 </h6>
                                 <p className="lg:text-sm text-xs absolute">
-                                    Fácil adaptación a los nuevos ambientes y culturas.
+                                    {t('skills.teamworkdesc')}
                                 </p>
                             </div>
                         </div>
@@ -34,10 +37,10 @@ export const Skills = () => {
                             </div>
                             <div>
                                 <h6 className="lg:text-lg text-sm font-bold">
-                                    Comunicación
+                                    {t('skills.communication')}
                                 </h6>
                                 <p className="lg:text-sm text-xs">
-                                    Fácil manejo de palabras y voculabularo tecnico y no tecnico.
+                                    {t('skills.communicationdesc')}
                                 </p>
                             </div>
                         </div>
@@ -49,10 +52,10 @@ export const Skills = () => {
                             </div>
                             <div>
                                 <h6 className="lg:text-lg text-sm font-bold">
-                                    Resolución de problemas
+                                    {t('skills.problem-solving')}
                                 </h6>
                                 <p className="lg:text-sm text-xs">
-                                    lluvia de ideas para planificar una estrategia que de solución a un problema.
+                                    {t('skills.problem-solvingdesc')}
                                 </p>
                             </div>
                         </div>
@@ -64,10 +67,10 @@ export const Skills = () => {
                             </div>
                             <div>
                                 <h6 className="lg:text-lg text-sm font-bold">
-                                    Gestión del tiempo
+                                    {t('skills.timemanagement')}
                                 </h6>
                                 <p className="lg:text-sm text-xs">
-                                    Organización y administración de los tiempos en cada proyecto y/o requerimiento.
+                                    {t('skills.timemanagementdesc')}
                                 </p>
                             </div>
                         </div>
@@ -79,10 +82,10 @@ export const Skills = () => {
                             </div>
                             <div>
                                 <h6 className="lg:text-lg text-sm font-bold">
-                                    Adaptabilidad
+                                    {t('skills.adaptability')}
                                 </h6>
                                 <p className="lg:text-sm text-xs">
-                                    Capaz y apto para cualquier nuevo reto, dando por incluido a cualquier tipo de oportunidad.
+                                    {t('skills.adaptabilitydesc')}
                                 </p>
                             </div>
                         </div>
@@ -94,10 +97,10 @@ export const Skills = () => {
                             </div>
                             <div>
                                 <h6 className="lg:text-lg text-sm font-bold">
-                                    Pensamiento critico
+                                    {t('skills.criticalthinking')}
                                 </h6>
                                 <p className="lg:text-sm text-xs">
-                                    Concentración y enfoque en los diferentes casos de uso.
+                                    {t('skills.criticalthinkingdesc')}
                                 </p>
                             </div>
                         </div>
@@ -109,10 +112,10 @@ export const Skills = () => {
                             </div>
                             <div>
                                 <h6 className="lg:text-lg text-sm font-bold">
-                                    Inteligencia emocional
+                                    {t('skills.emotionalintelligence')}
                                 </h6>
                                 <p className="lg:text-sm text-xs">
-                                    Control y manejo de emociones en los diferentes conflictos y desafios.
+                                    {t('skills.emotionalintelligencedesc')}
                                 </p>
                             </div>
                         </div>
@@ -124,10 +127,10 @@ export const Skills = () => {
                             </div>
                             <div>
                                 <h6 className="lg:text-lg text-sm font-bold">
-                                    Liderazgo
+                                    {t('skills.leadership')}
                                 </h6>
                                 <p className="lg:text-sm text-xs">
-                                    Ser el lider en un proyecto, gestionar equipos y encaminar al equipo hacia la meta.
+                                    {t('skills.leadershipdesc')}
                                 </p>
                             </div>
                         </div>
@@ -139,10 +142,10 @@ export const Skills = () => {
                             </div>
                             <div>
                                 <h6 className="lg:text-lg text-sm font-bold">
-                                    Resolución de conflictos
+                                    {t('skills.conflictresolution')}
                                 </h6>
                                 <p className="lg:text-sm text-xs">
-                                    Resolver y mediar los diferentes conflictos e inconvenientes entre los equipos del proyecto.
+                                    {t('skills.conflictresolutiondesc')}
                                 </p>
                             </div>
                         </div>
@@ -154,10 +157,10 @@ export const Skills = () => {
                             </div>
                             <div>
                                 <h6 className="lg:text-lg text-sm font-bold">
-                                    Creatividad
+                                    {t('skills.creativity')}
                                 </h6>
                                 <p className="lg:text-sm text-xs">
-                                    Proponer ideas que puedan ser convenientes para un proyecto o facilitar los diferentes casos de uso.
+                                    {t('skills.creativitydesc')}
                                 </p>
                             </div>
                         </div>
@@ -169,10 +172,10 @@ export const Skills = () => {
                             </div>
                             <div>
                                 <h6 className="lg:text-lg text-sm font-bold">
-                                    Ética laboral
+                                    {t('skills.workethic')}
                                 </h6>
                                 <p className="lg:text-sm text-xs">
-                                    Seguir las leyes y politicas de la empresa, ser respetuoso hacia mis compañeros y mostrar disponibilidad.
+                                    {t('skills.workethicdesc')}
                                 </p>
                             </div>
                         </div>
@@ -184,10 +187,10 @@ export const Skills = () => {
                             </div>
                             <div>
                                 <h6 className="lg:text-lg text-sm font-bold">
-                                    Atención al detalle
+                                    {t('skills.attentiontodetails')}
                                 </h6>
                                 <p className="lg:text-sm text-xs">
-                                    Ver siempre los pequeños detalles que puedan dar conflictos a larzo plazo y solucionarlos antes de tiempo.
+                                    {t('skills.attentiontodetailsdesc')}
                                 </p>
                             </div>
                         </div>

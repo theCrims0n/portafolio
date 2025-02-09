@@ -1,0 +1,83 @@
+{
+    "navbar": {
+        "about": "Acerca de mi",
+        "technologies": "Tecnologias",
+        "experience": "Experiencia laboral",
+        "projects": "Proyectos",
+        "contactme": "Contactame",
+        "skills": "Habilidades"
+    },
+    "presentation": {
+        "software": "Desarrollador de Software",
+        "subtitle": "Con +6 años de experiencia en el campo laboral."
+    },
+    "about": {
+        "aboutme": "Acerca de mi",
+        "hello": "Hola, Soy Miguel Salomon.",
+        "text1": "Nacido en 1989, criado en Sonora, Mexico y egresado de la Universdad Tecnologica del Sur de Sonora (UTS), Soy ingeniero de Software con 6 años de experiencia desarrollando aplicaciones web y de escritorio. Trabajo directamente con Clientes Globales, aprendiendo e implementando constantemente nuevas tecnologías de la industria del software.",
+        "text2": "Mi principal objetivo es potenciar mis habilidades profesionales en el campo de los sistemas informáticos y ser un pilar fundamental para la sostenibilidad de los proyectos.",
+        "text3": "Mis pasatiempos son la musica rock, cantar, ver series , aprender tecnologias diferentes y pasar tiempo con mi familia."
+    },
+    "experience": {
+        "seetimeline": "Ver linea de tiempo",
+        "seegrid": "Ver grid laboral",
+        "timeline": "Linea de tiempo",
+        "experience": "Experiencia Laboral",
+        "softwaredev": "Desarrollador de Software",
+        "systemanalist": "Analista de desarrollo de sistemas",
+        "softenginerinter": "Interno Ingeniero de Software (Interno)",
+        "devise": "Desarrollo de sistemas web, creación de módulos. Diseño de estructura de base de datos, diseño y arquitectura de módulos de repositorio, planeación y ejecución de planes de negocio, creación de validaciones por flujo y requerimientos, creación de interfaces web, diseño de catálogos, creación y manipulación de consultas de consultas desde el servidor Node js",
+        "euysa": "Creación y modificación de ERP's basados en C# a través de conexión en Base de Datos Oracle, principales funciones: Mantenimiento de procesos, Creación de ventanas, Proyecto de Liquidación Automática, Facturación automática, Asignación de métodos de pago, Actualización de ventanas e inserción de procesos a través de Bulks masivos.",
+        "equipesca": "Creación y modificación de ERP's basados en C# a través de conexión en Base de Datos Oracle, principales funciones: Mantenimiento de procesos, Creación de ventanas, Proyecto de Liquidación Automática, Facturación automática, Asignación de métodos de pago, Actualización de ventanas e inserción de procesos a través de Bulks masivos.",
+        "emcor": "Mis principales actividades fueron el soporte técnico de la empresa, sus sucursales y filiales, el desarrollo del sistema de helpdesk web, actualización de cubos, desarrollo de consultas para actualización de registros y la asignación de permisos a los usuarios del sistema empresarial.",
+        "repobox": "Se creó un sistema web para la administración de la empresa REPO BOX con el fin de facilitar la administración de Roles en los Empleados, así como sus consultas y un ABC complejo."
+    },
+    "skills": {
+        "skills": "Habilidades blandas",
+        "teamwork": "Trabajo en equipo",
+        "communication": "Comunicación",
+        "problem-solving": "Resolución de problemas",
+        "timemanagement": "Gestión del tiempo",
+        "adaptability": "Adaptabilidad",
+        "criticalthinking": "Pensamiento critico",
+        "emotionalintelligence": "Inteligencia emocional",
+        "leadership": "Liderazgo",
+        "conflictresolution": "Resolución de conflictos",
+        "creativity": "Creatividad",
+        "workethic": "Ética laboral",
+        "attentiontodetails": "Atención al detalle",
+        "teamworkdesc": "Fácil adaptación a los nuevos ambientes y culturas.",
+        "communicationdesc": "Fácil manejo de palabras y voculabularo tecnico y no tecnico.",
+        "problem-solvingdesc": "lluvia de ideas para planificar una estrategia que de solución a un problema.",
+        "timemanagementdesc": "Organización y administración de los tiempos en cada proyecto y/o requerimiento.",
+        "adaptabilitydesc": "Capaz y apto para cualquier nuevo reto, dando por incluido a cualquier tipo de oportunidad.",
+        "criticalthinkingdesc": "Concentración y enfoque en los diferentes casos de uso.",
+        "emotionalintelligencedesc": "Control y manejo de emociones en los diferentes conflictos y desafios.",
+        "leadershipdesc": "Ser el lider en un proyecto, gestionar equipos y encaminar al equipo hacia la meta.",
+        "conflictresolutiondesc": "Resolver y mediar los diferentes conflictos e inconvenientes entre los equipos del proyecto.",
+        "creativitydesc": "Proponer ideas que puedan ser convenientes para un proyecto o facilitar los diferentes casos de uso.",
+        "workethicdesc": "Seguir las leyes y politicas de la empresa, ser respetuoso hacia mis compañeros y mostrar disponibilidad.",
+        "attentiontodetailsdesc": "Ver siempre los pequeños detalles que puedan dar conflictos a larzo plazo y solucionarlos antes de tiempo."
+    },
+    "projects": {
+        "projects": "Proyectos",
+        "app": "App para administración de empleados",
+        "ecommerce": "Proyecto basado en gestion de productos, rol de usuarios y checkout de compras.",
+        "crimson": "Aplicación de servicio de mensajeria instantanea o para resumir... una sala de chat ideal para los amigos.",
+        "nextia": "Aplicación desarrollada para la gestion de empleados basados en una empresa con roles de usuario.",
+        "link": "Link del proyecto",
+        "tools": "Herramientas utilizadas"
+    },
+    "technologies": {
+        "technologies": "Tecnologias"
+    },
+    "contact": {
+        "contact": "Contactame",
+        "subject": "Asunto",
+        "message": "Mensaje",
+        "send": "Enviar",
+        "messagedesc": "Escribeme un mensaje",
+        "emailrequired": "El correo es requerido",
+        "messagerequired": "El mensaje es requerido"
+    }
+}

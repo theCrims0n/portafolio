@@ -1,0 +1,83 @@
+{
+    "navbar": {
+        "about": "About me",
+        "technologies": "Technologies",
+        "experience": "Professional experience",
+        "projects": "Projects",
+        "contactme": "Contact me",
+        "skills": "Skills"
+    },
+    "presentation": {
+        "software": "Software Developer",
+        "subtitle": "With +6 years of professional experience."
+    },
+    "about": {
+        "aboutme": "About me",
+        "hello": "Hello, I'm Miguel Salomon.",
+        "text1": "Born in 1989, raised in Sonora, Mexico and graduated from the Universidad Tecnologica del Sur de Sonora (UTS), I am a Software Engineer with 6 years of experience developing web and desktop applications. I work directly with Global Clients, constantly learning and implementing new technologies in the software industry.",
+        "text2": "My main goal is to enhance my professional skills in the field of computer systems and be a fundamental pillar for the sustainability of projects.",
+        "text3": "My hobbies are rock music, singing, watching series, learning different technologies and spending time with my family."
+    },
+    "experience": {
+        "seetimeline": "See timeline",
+        "seegrid": "See grid",
+        "timeline": "Time Line",
+        "experience": "Professional experience",
+        "softwaredev": "Software Developer",
+        "systemanalist": "Systems Development Analyst",
+        "softenginerinter": "Software Engineer Intern (Intern)",
+        "devise": "Development of web systems, creation of modules. Database structure design, design and architecture of repository modules, planning and execution of business plans, creation of validations by flow and requirements, creation of web interfaces, design of catalogs, creation and manipulation of queries from the Node js server",
+        "euysa": "Creation and modification of ERP's based on C# through connection to Oracle Database, main functions: Process maintenance, Window creation, Automatic Settlement Project, Automatic billing, Assignment of payment methods, Window update and insertion of processes through massive Bulks.",
+        "equipesca": "Creation and modification of ERP's based on C# through connection to Oracle Database, main functions: Process maintenance, Window creation, Automatic Settlement Project, Automatic billing, Assignment of payment methods, Window update and insertion of processes through massive Bulks.",
+        "emcor": "My main activities were technical support for the company, its branches and subsidiaries, development of the web helpdesk system, updating cubes, developing queries to update records and assigning permissions to users of the business system.",
+        "repobox": "A web system was created for the administration of the REPO BOX company in order to facilitate the administration of Roles in Employees, as well as their queries and a complex ABC."
+    },
+    "skills": {
+        "skills": "Soft Skills",
+        "teamwork": "Teamwork",
+        "communication": "Communication",
+        "problem-solving": "Problem-solving",
+        "timemanagement": "Time management",
+        "adaptability": "Adaptability",
+        "criticalthinking": "Critical thinking",
+        "emotionalintelligence": "Emotional intelligence",
+        "leadership": "Leadership",
+        "conflictresolution": "Conflict resolution",
+        "creativity": "Creativity",
+        "workethic": "Work ethic",
+        "attentiontodetails": "Attention to details",
+        "teamworkdesc": "Easy adaptation to new environments and cultures.",
+        "communicationdesc": "Easy handling of technical and non-technical words and vocabulary.",
+        "problem-solvingdesc": "brainstorming to plan a strategy to solve a problem.",
+        "timemanagementdesc": "Organization and administration of time in each project and/or requirement.",
+        "adaptabilitydesc": "Capable and fit for any new challenge, taking on any type of opportunity.",
+        "criticalthinkingdesc": "Concentration and focus on different use cases.",
+        "emotionalintelligencedesc": "Control and management of emotions in different conflicts and challenges.",
+        "leadershipdesc": "Be the leader in a project, manage teams and guide the team towards the goal.",
+        "conflictresolutiondesc": "Resolve and mediate the different conflicts and inconveniences between the project teams.",
+        "creativitydesc": "Propose ideas that may be suitable for a project or facilitate different use cases.",
+        "workethicdesc": "Follow the laws and policies of the company, be respectful towards my colleagues and show availability.",
+        "attentiontodetailsdesc": "Always look for small details that can cause long-term conflicts and resolve them ahead of time."
+    },
+    "projects": {
+        "projects": "Projects",
+        "app": "App for employee management",
+        "ecommerce": "Project based on product management, user roles and purchase checkout.",
+        "crimson": "Instant messaging service application or, to sum it up... a chat room ideal for friends.",
+        "nextia": "Application developed for the management of employees based on a company with user roles.",
+        "link": "Project link",
+        "tools": "Tools used"
+    },
+    "technologies": {
+        "technologies": "Technologies"
+    },
+    "contact": {
+        "contact": "Contact me",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send",
+        "messagedesc": "Write me a message",
+        "emailrequired": "Email is required",
+        "messagerequired": "Message is required"
+    }
+}
